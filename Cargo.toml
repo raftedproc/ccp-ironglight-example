@@ -4,6 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-ccp-ironlight = { git= "https://github.com/fluencelabs/randomx-rust-wrapper.git", branch = "randomx-plonky3-sp1"}
+ccp-ironlight = { git= "https://github.com/raftedproc/randomx-rust-wrapper.git", branch = "main"}
 generic-array = "=1.1.0"
 hex = "0.4.3"

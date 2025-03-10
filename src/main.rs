@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-use ccp_ironlight::{ironlight::HashWithGroth16Prove, Cache, IronLightVM, RandomXFlags};
+use ccp_ironlight::{ironlight::HashWithGroth16Proof, Cache, IronLightVM, RandomXFlags};
 
-fn run_prove_light(global_nonce: &[u8], local_nonce: &[u8], flags: RandomXFlags) -> HashWithGroth16Prove {
+fn run_prove_light(global_nonce: &[u8], local_nonce: &[u8], flags: RandomXFlags) -> HashWithGroth16Proof {
     let cache = Cache::new(&global_nonce, flags).unwrap();
     let mut vm = IronLightVM::new(cache, flags).unwrap();
     vm.prove_light(&local_nonce)
@@ -27,7 +27,7 @@ fn main() {
     let local_nonce = vec![4, 2, 3, 4, 5, 6, 7];
     let flags = RandomXFlags::DEFAULT | RandomXFlags::FLAG_IRONLIGHT;
 
-    let  HashWithGroth16Prove {hash, proof} = run_prove_light(&global_nonce, &local_nonce, flags);
+    let  HashWithGroth16Proof {hash, proof} = run_prove_light(&global_nonce, &local_nonce, flags);
     println!("hash: {:?}", hash);
     println!("groth16 proof: {:?}", hex::encode(proof));
 }

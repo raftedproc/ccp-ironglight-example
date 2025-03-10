@@ -741,7 +741,7 @@ dependencies = [
 [[package]]
 name = "ccp-ironlight"
 version = "0.1.0"
-source = "git+https://github.com/fluencelabs/randomx-rust-wrapper.git?branch=randomx-plonky3-sp1#e77ee6ad5c44a617d0a0f272b686827551f01f10"
+source = "git+https://github.com/raftedproc/randomx-rust-wrapper.git?branch=main#b8403033b45ff439cc04c23e6a2cb4fc52650167"
 dependencies = [
  "bitflags 2.8.0",
  "ccp-randomx",
@@ -786,7 +786,7 @@ dependencies = [
 [[package]]
 name = "ccp-randomx"
 version = "0.1.0"
-source = "git+https://github.com/fluencelabs/randomx-rust-wrapper.git?branch=randomx-plonky3-sp1#e77ee6ad5c44a617d0a0f272b686827551f01f10"
+source = "git+https://github.com/raftedproc/randomx-rust-wrapper.git?branch=main#b8403033b45ff439cc04c23e6a2cb4fc52650167"
 dependencies = [
  "bitflags 2.8.0",
  "ccp-randomx-types",
@@ -800,7 +800,7 @@ dependencies = [
 [[package]]
 name = "ccp-randomx-types"
 version = "0.1.0"
-source = "git+https://github.com/fluencelabs/randomx-rust-wrapper.git?branch=randomx-plonky3-sp1#e77ee6ad5c44a617d0a0f272b686827551f01f10"
+source = "git+https://github.com/raftedproc/randomx-rust-wrapper.git?branch=main#b8403033b45ff439cc04c23e6a2cb4fc52650167"
 dependencies = [
  "hex",
  "serde",
